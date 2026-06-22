@@ -1,0 +1,478 @@
+/* CSS COPA DO MUNDO 2026 - Baseado na imagem Figma */
+
+/* BACKGROUND COM PADRÃO ARCADE */
+.copa-body {
+    background-color: #000000;
+    background-image:
+        linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+        linear-gradient(90deg, rgba(139, 29, 29, 0.06), rgba(143, 161, 125, 0.02), rgba(79, 105, 88, 0.06));
+    background-size: 100% 4px, 6px 100%;
+    color: #ffdd00;
+}
+
+.copa-container {
+    padding: 20px 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(0,204,68,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="%23000000"/><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+}
+
+/* HEADER - LOGO FIFA WORLD CUP */
+.copa-header {
+    background-color: #ff1493;
+    border-radius: 15px;
+    margin: 30px 20px;
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.8), 0 0 60px rgba(0, 204, 68, 0.6);
+    padding: 40px 20px;
+}
+
+.copa-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 4rem;
+    color: #ffffff;
+    text-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 40px rgba(255, 105, 180, 0.6),
+        0 0 60px rgba(0, 204, 68, 0.4);
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.copa-subtitle {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 221, 0, 0.8);
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+.copa-trophy-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.copa-trophy {
+    font-size: 120px;
+    filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8)) drop-shadow(0 0 40px rgba(255, 105, 180, 0.6));
+    animation: bounceTrophy 2s infinite;
+}
+
+@keyframes bounceTrophy {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.copa-banners {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.copa-banner-brazil {
+    background-color: #ffdd00;
+    color: #000000;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 221, 0, 0.8);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* SEÇÃO GENÉRICA */
+.copa-section {
+    margin: 60px 20px;
+    padding: 40px 20px;
+    background-color: rgba(0, 20, 40, 0.8);
+    border: 3px solid #00cc44;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 204, 68, 0.4), inset 0 0 20px rgba(0, 204, 68, 0.1);
+}
+
+.section-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.8rem;
+    color: #ffdd00;
+    text-shadow: 0 0 15px rgba(255, 221, 0, 0.8);
+    letter-spacing: 2px;
+}
+
+.badge-style {
+    display: inline-block;
+    background-color: #ff1493;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+}
+
+/* FLAG CARDS - 18 ESTILOS */
+.flag-card {
+    background-color: rgba(0, 102, 204, 0.9);
+    border: 3px solid #00cc44;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 204, 68, 0.5);
+    cursor: pointer;
+}
+
+.flag-card:hover {
+    transform: scale(1.1) rotateY(10deg);
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.8), 0 0 50px rgba(0, 204, 68, 0.6);
+    border-color: #ffaa00;
+}
+
+.flag-emoji {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    display: inline-block;
+    filter: drop-shadow(0 0 10px rgba(255, 221, 0, 0.6));
+}
+
+.flag-name {
+    font-family: 'Rajdhani', sans-serif;
+    color: #ffdd00;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* GROUP CARDS - 10 ESTILOS */
+.group-card {
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+    transition: all 0.3s ease;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.group-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 40px rgba(255, 105, 180, 0.8), 0 0 60px rgba(0, 204, 68, 0.6);
+}
+
+/* Estilo 1 - Rosa/Coral */
+.group-style-1 {
+    background-color: rgba(255, 20, 147, 0.1);
+    border-color: #ff69b4;
+}
+
+/* Estilo 2 - Verde */
+.group-style-2 {
+    background-color: rgba(34, 139, 34, 0.1);
+    border-color: #00cc44;
+}
+
+/* Estilo 3 - Azul */
+.group-style-3 {
+    background-color: rgba(0, 102, 204, 0.1);
+    border-color: #0066cc;
+}
+
+/* Estilo 4 - Laranja */
+.group-style-4 {
+    background-color: rgba(255, 140, 0, 0.1);
+    border-color: #ffaa00;
+}
+
+/* Estilo 5 - Roxo */
+.group-style-5 {
+    background-color: rgba(75, 0, 130, 0.1);
+    border-color: #a020f0;
+}
+
+.group-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.3rem;
+    color: #ffdd00;
+    text-shadow: 0 0 10px rgba(255, 221, 0, 0.7);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.group-countries {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.country-item {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    border-left: 4px solid #00cc44;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.country-item:hover {
+    background-color: rgba(0, 204, 68, 0.2);
+    border-left-color: #ffaa00;
+    transform: translateX(5px);
+}
+
+/* TEMPLATE CARDS */
+.template-card {
+    background-color: rgba(0, 20, 50, 0.9);
+    border: 3px solid #00cc44;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 204, 68, 0.5);
+    transition: all 0.3s ease;
+}
+
+.template-card:hover {
+    box-shadow: 0 0 40px rgba(255, 105, 180, 0.8), 0 0 60px rgba(0, 204, 68, 0.6);
+    border-color: #ffaa00;
+}
+
+.template-header {
+    background-color: #ff1493;
+    color: #ffffff;
+    font-family: 'Press Start 2P', cursive;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.template-content {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.placar-display {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.8rem;
+    color: #ffdd00;
+    text-shadow: 0 0 10px rgba(255, 221, 0, 0.7);
+    margin: 20px 0;
+}
+
+.placar-data {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.8rem;
+    color: #00cc44;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.stats-item {
+    background-color: rgba(0, 204, 68, 0.1);
+    border-left: 4px solid #00cc44;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: #ffdd00;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+}
+
+.fulltime-badge {
+    background-color: rgba(255, 105, 180, 0.2);
+    border: 3px dashed #ff69b4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fulltime-badge span {
+    display: block;
+    font-family: 'Press Start 2P', cursive;
+    color: #ff69b4;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.fulltime-badge p {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffdd00;
+    font-size: 1.5rem;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(255, 221, 0, 0.7);
+}
+
+/* BRASIL DESTAQUE */
+.copa-section-brasil {
+    margin: 60px 20px;
+    padding: 60px 20px;
+    background-color: #ffdd00;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(255, 221, 0, 0.8);
+    text-align: center;
+}
+
+.brasil-highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brasil-flag-big {
+    font-size: 200px;
+    filter: drop-shadow(0 0 30px rgba(255, 255, 0, 0.8)) drop-shadow(0 0 60px rgba(0, 204, 68, 0.6));
+    animation: rotateBrasil 3s infinite ease-in-out;
+}
+
+@keyframes rotateBrasil {
+    0%, 100% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(10deg) scale(1.1); }
+}
+
+.brasil-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    color: #000000;
+    text-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.8),
+        2px 2px 0 rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+.copa-footer {
+    background-color: rgba(0, 20, 40, 0.8);
+    border-top: 3px solid #00cc44;
+    color: #ffdd00;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 80px;
+}
+
+.copa-footer p {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 204, 68, 0.5);
+}
+
+/* RESPONSIVO */
+@media (max-width: 1200px) {
+    .copa-title {
+        font-size: 2.5rem;
+    }
+
+    .copa-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .brasil-flag-big {
+        font-size: 150px;
+    }
+
+    .brasil-text {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .copa-header {
+        margin: 20px 10px;
+        padding: 30px 15px;
+    }
+
+    .copa-title {
+        font-size: 2rem;
+    }
+
+    .copa-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .copa-trophy {
+        font-size: 80px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .badge-style {
+        font-size: 0.75rem;
+        padding: 10px 20px;
+    }
+
+    .flag-emoji {
+        font-size: 2rem;
+    }
+
+    .group-title {
+        font-size: 1rem;
+    }
+
+    .placar-display {
+        font-size: 1.3rem;
+    }
+
+    .brasil-flag-big {
+        font-size: 100px;
+    }
+
+    .brasil-text {
+        font-size: 1.5rem;
+    }
+
+    .country-item {
+        font-size: 0.85rem;
+        padding: 10px 12px;
+    }
+
+    .template-header {
+        font-size: 0.8rem;
+        padding: 12px;
+    }
+
+    .copa-section {
+        margin: 40px 10px;
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .copa-title {
+        font-size: 1.5rem;
+    }
+
+    .copa-subtitle {
+        font-size: 1rem;
+    }
+
+    .copa-trophy {
+        font-size: 60px;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .flag-emoji {
+        font-size: 1.5rem;
+    }
+
+    .group-card {
+        min-height: auto;
+    }
+
+    .brasil-flag-big {
+        font-size: 80px;
+    }
+
+    .brasil-text {
+        font-size: 1.2rem;
+    }
+}
