@@ -8,9 +8,10 @@
 	<link rel="icon" type="image/icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/copa2026.css">
 </head>
 
-<body>
+<body class="copa-body">
 	<nav class="navbar navbar-expand-lg navbar-dark navbar-arcade sticky-top">
 		<div class="container">
 			<a class="navbar-brand arcade-title flicker" href="index.php">ARCADE GIRL'S</a>
@@ -20,122 +21,388 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
-						<a class="nav-link active" href="index.php">Home</a>
+						<a class="nav-link" href="index.php">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="incluir.php">Incluir</a>
+						<a class="nav-link active" href="copa-2026.html">Copa 2026</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<main class="container my-5">
-		<div class="row mb-4">
-			<div class="col-12">
-				<h1 class="arcade-title text-center">Coleção de Jogos</h1>
-			</div>
-		</div>
-
-		<header class="mb-4">
-			<div class="row">
-				<div class="col-12">
-					<form action="#" method="post" class="mb-3">
-						<div class="input-group">
-							<input type="search" class="form-control arcade-input"
-								placeholder="Digite o nome do jogo..." id="busca" name="filtro">
-							<button class="btn btn-arcade" type="submit">Pesquisar</button>
-						</div>
-					</form>
+	<main class="container-fluid copa-container">
+		<!-- HEADER COM LOGO FIFA -->
+		<section class="copa-header text-center py-5">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-12 col-md-6 mb-4">
+					<h1 class="copa-title">FIFA</h1>
+					<div class="copa-trophy-wrapper">
+						<div class="copa-trophy">🏆</div>
+					</div>
+					<h2 class="copa-subtitle">WORLD CUP 2026</h2>
 				</div>
 			</div>
-		</header>
+
+			<div class="row justify-content-center my-4">
+				<div class="col-12 col-md-8">
+					<div class="copa-banners">
+						<span class="copa-banner-brazil">🇧🇷 BRASIL 🇧🇷</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SEÇÃO 1: 18 ESTILOS DE BANDEIRAS -->
+		<section class="copa-section">
+			<div class="row mb-5">
+				<div class="col-12">
+					<h3 class="section-title text-center mb-4">
+						<span class="badge-style">18 FLAG STYLES</span>
+					</h3>
+				</div>
+			</div>
+
+			<div class="row g-3">
+				<!-- Bandeiras dos países -->
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇺🇸</div>
+						<p class="flag-name">USA</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇲🇽</div>
+						<p class="flag-name">MÉXICO</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇨🇦</div>
+						<p class="flag-name">CANADÁ</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇦🇷</div>
+						<p class="flag-name">ARGENTINA</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇧🇷</div>
+						<p class="flag-name">BRASIL</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇪🇨</div>
+						<p class="flag-name">EQUADOR</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇵🇾</div>
+						<p class="flag-name">PARAGUAI</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇦🇺</div>
+						<p class="flag-name">AUSTRÁLIA</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇹🇷</div>
+						<p class="flag-name">TURQUIA</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇩🇪</div>
+						<p class="flag-name">ALEMANHA</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇮🇹</div>
+						<p class="flag-name">ITÁLIA</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇪🇸</div>
+						<p class="flag-name">ESPANHA</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇫🇷</div>
+						<p class="flag-name">FRANÇA</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇵🇹</div>
+						<p class="flag-name">PORTUGAL</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇬🇧</div>
+						<p class="flag-name">INGLATERRA</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇯🇵</div>
+						<p class="flag-name">JAPÃO</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇰🇷</div>
+						<p class="flag-name">COREIA</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="flag-card">
+						<div class="flag-emoji">🇸🇬</div>
+						<p class="flag-name">SINGAPURA</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SEÇÃO 2: GRUPOS -->
+		<section class="copa-section my-5">
+			<div class="row mb-5">
+				<div class="col-12">
+					<h3 class="section-title text-center mb-4">
+						<span class="badge-style">10 GROUP STYLES</span>
+					</h3>
+				</div>
+			</div>
+
+			<div class="row g-4">
+				<!-- GRUPO A -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="group-card group-style-1">
+						<h4 class="group-title">GRUPO A</h4>
+						<div class="group-countries">
+							<div class="country-item">🇦🇷 ARGENTINA</div>
+							<div class="country-item">🇵🇾 PARAGUAI</div>
+							<div class="country-item">🇦🇺 AUSTRÁLIA</div>
+							<div class="country-item">🇹🇷 TURQUIA</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- GRUPO B -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="group-card group-style-2">
+						<h4 class="group-title">GRUPO B</h4>
+						<div class="group-countries">
+							<div class="country-item">🇺🇸 USA</div>
+							<div class="country-item">🇲🇽 MÉXICO</div>
+							<div class="country-item">🇨🇦 CANADÁ</div>
+							<div class="country-item">🇪🇨 EQUADOR</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- GRUPO E -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="group-card group-style-3">
+						<h4 class="group-title">GRUPO E</h4>
+						<div class="group-countries">
+							<div class="country-item">🇩🇪 ALEMANHA</div>
+							<div class="country-item">🇮🇹 ITÁLIA</div>
+							<div class="country-item">🇪🇸 ESPANHA</div>
+							<div class="country-item">🇸🇬 SINGAPURA</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- GRUPO F -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="group-card group-style-4">
+						<h4 class="group-title">GRUPO F</h4>
+						<div class="group-countries">
+							<div class="country-item">🇫🇷 FRANÇA</div>
+							<div class="country-item">🇵🇹 PORTUGAL</div>
+							<div class="country-item">🇬🇧 INGLATERRA</div>
+							<div class="country-item">🇮🇪 IRLANDA</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- GRUPO C -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="group-card group-style-5">
+						<h4 class="group-title">GRUPO C</h4>
+						<div class="group-countries">
+							<div class="country-item">🇧🇷 BRASIL</div>
+							<div class="country-item">🇯🇵 JAPÃO</div>
+							<div class="country-item">🇰🇷 COREIA</div>
+							<div class="country-item">🇲🇱 MALI</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- GRUPO G -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="group-card group-style-1">
+						<h4 class="group-title">GRUPO G</h4>
+						<div class="group-countries">
+							<div class="country-item">🇩🇪 DINAMARCA</div>
+							<div class="country-item">🇳🇴 NORUEGA</div>
+							<div class="country-item">🇸🇪 SUÉCIA</div>
+							<div class="country-item">🇫🇮 FINLÂNDIA</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- GRUPO D -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="group-card group-style-2">
+						<h4 class="group-title">GRUPO D</h4>
+						<div class="group-countries">
+							<div class="country-item">🇦🇹 ÁUSTRIA</div>
+							<div class="country-item">🇧🇪 BÉLGICA</div>
+							<div class="country-item">🇨🇭 SUÍÇA</div>
+							<div class="country-item">🇳🇱 HOLANDA</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- GRUPO H -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="group-card group-style-3">
+						<h4 class="group-title">GRUPO H</h4>
+						<div class="group-countries">
+							<div class="country-item">🇷🇴 ROMÊNIA</div>
+							<div class="country-item">🇨🇿 REPÚBLICA TCHECA</div>
+							<div class="country-item">🇵🇱 POLÔNIA</div>
+							<div class="country-item">🇸🇰 ESLOVÁQUIA</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- GRUPO I -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="group-card group-style-4">
+						<h4 class="group-title">GRUPO I</h4>
+						<div class="group-countries">
+							<div class="country-item">🇬🇷 GRÉCIA</div>
+							<div class="country-item">🇹🇳 TUNÍSIA</div>
+							<div class="country-item">🇪🇬 EGITO</div>
+							<div class="country-item">🇿🇦 ÁFRICA DO SUL</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- GRUPO J -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="group-card group-style-5">
+						<h4 class="group-title">GRUPO J</h4>
+						<div class="group-countries">
+							<div class="country-item">🇲🇦 MARROCOS</div>
+							<div class="country-item">🇸🇳 SENEGAL</div>
+							<div class="country-item">🇨🇲 CAMARÕES</div>
+							<div class="country-item">🇳🇬 NIGÉRIA</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- Em vez de tabela, use um grid: -->
+	<div class="figurinhas-grid">
+		<?php while ($dados = mysqli_fetch_array($query)): ?>
+			<div class="figurinha-card">
+				<div class="figurinha-numero">
+					<?php echo $dados['numero']; ?>
+				</div>
+				<img src="img/<?php echo $dados['foto']; ?>" alt="<?php echo $dados['nome_jogador']; ?>">
+				<div class="figurinha-info">
+					<p><strong>
+							<?php echo $dados['nome_jogador']; ?>
+						</strong></p>
+					<p>
+						<?php echo $dados['pais']; ?>
+					</p>
+					<p>
+						<?php echo $dados['posicao']; ?>
+					</p>
+				</div>
+				<!-- CHECKBOX PARA MARCAR QUE TEM -->
+				<input type="checkbox" class="figurinha-checkbox" data-id="<?php echo $dados['id']; ?>" <?php echo $dados['ativo'] ? 'checked' : ''; ?>>
+			</div>
+		<?php endwhile; ?>
+	</div>
+
+	<!-- Em vez de tabela, use um grid: -->
+	<div class="figurinhas-grid">
+		<?php while ($dados = mysqli_fetch_array($query)): ?>
+			<div class="figurinha-card">
+				<div class="figurinha-numero">
+					<?php echo $dados['numero']; ?>
+				</div>
+				<img src="img/<?php echo $dados['foto']; ?>" alt="<?php echo $dados['nome_jogador']; ?>">
+				<div class="figurinha-info">
+					<p><strong>
+							<?php echo $dados['nome_jogador']; ?>
+						</strong></p>
+					<p>
+						<?php echo $dados['pais']; ?>
+					</p>
+					<p>
+						<?php echo $dados['posicao']; ?>
+					</p>
+				</div>
+				<!-- CHECKBOX PARA MARCAR QUE TEM -->
+				<input type="checkbox" class="figurinha-checkbox" data-id="<?php echo $dados['id']; ?>" <?php echo $dados['ativo'] ? 'checked' : ''; ?>>
+			</div>
+		<?php endwhile; ?>
 
 		<?php
-		try {
-			include "conexao.php";
-
-			if ($_SERVER["REQUEST_METHOD"] == "POST") {
-				$filtro = $conexao->real_escape_string($_POST["filtro"]);
-				$sql = "SELECT * FROM jogos WHERE nome LIKE '%$filtro%' ORDER BY nome";
-			} else {
-				$sql = "SELECT * FROM jogos ORDER BY nome";
-			}
-
-			$query = $conexao->query($sql);
-
-			if ($query && $query->num_rows > 0) {
-				echo "<div class=\"table-responsive\">\n";
-				echo "    <table class=\"table table-arcade table-hover\">\n";
-				echo "        <thead>\n";
-				echo "            <tr>\n";
-				echo "                <th width=\"50px\">ID</th>\n";
-				echo "                <th width=\"250px\">Jogo</th>\n";
-				echo "                <th width=\"200px\">Plataforma</th>\n";
-				echo "                <th width=\"120px\">Lançamento</th>\n";
-				echo "                <th width=\"100px\">Imagem</th>\n";
-				echo "                <th width=\"300px\" class=\"text-end\">Ações</th>\n";
-				echo "            </tr>\n";
-				echo "        </thead>\n";
-				echo "        <tbody>\n";
-
-				while ($dados = mysqli_fetch_array($query)) {
-					$id_raw = $dados['id'];
-					$id = base64_encode($id_raw);
-					$id_attr = htmlspecialchars($id, ENT_QUOTES);
-					$foto = !empty($dados['foto']) ? $dados['foto'] : "SemImagem.png";
-					$nome = htmlspecialchars($dados['nome']);
-					$plataforma = htmlspecialchars($dados['plataforma']);
-					$data_display = "";
-					if (!empty($dados['dataCad'])) {
-						$dt = new DateTime($dados['dataCad'], new DateTimeZone("America/Sao_Paulo"));
-						$data_display = $dt->format("d/m/Y");
-					}
-
-					echo "            <tr>\n";
-					echo "                <td>" . intval($id_raw) . "</td>\n";
-					echo "                <td>{$nome}</td>\n";
-					echo "                <td>{$plataforma}</td>\n";
-					echo "                <td>{$data_display}</td>\n";
-					echo "                <td>\n";
-					echo "                    <a href=\"verjogos.php?id={$id_attr}\">\n";
-					echo "                        <img src=\"img/" . htmlspecialchars($foto, ENT_QUOTES) . "\" class=\"foto-tabela\" alt=\"{$nome}\">\n";
-					echo "                    </a>\n";
-					echo "                </td>\n";
-					echo "                <td class=\"text-end\">\n";
-					echo "                    <a href=\"verjogos.php?id={$id_attr}\" class=\"btn btn-arcade btn-sm\">Ver</a>\n";
-					echo "                    <a href=\"editar.php?id={$id_attr}\" class=\"btn btn-arcade btn-sm\">Editar</a>\n";
-					echo "                    <button type=\"button\" class=\"btn btn-arcade btn-sm\" data-bs-toggle=\"modal\" data-bs-target=\"#excluirModal\" data-produto=\"{$id_attr}\">Apagar</button>\n";
-					echo "                </td>\n";
-					echo "            </tr>\n";
-				}
-
-				echo "        </tbody>\n";
-				echo "    </table>\n";
-				echo "</div>\n";
-			} else {
-				echo "<div class=\"alert alert-info text-center\" role=\"alert\">\n";
-				echo "    <h4>Nenhum jogo encontrado!</h4>\n";
-				echo "</div>\n";
-			}
-		} catch (Exception $e) {
-			echo "<div class=\"alert alert-danger alert-dismissible fade show\" role=\"alert\">\n";
-			echo "    <h4>Erro:</h4>\n";
-			echo "    <p>{$e->getMessage()}</p>\n";
-			echo "    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\"></button>\n";
-			echo "</div>\n";
-		}
+		$filtro = $conexao->real_escape_string($_POST["filtro"] ?? "");
+		$sql = "SELECT * FROM figurinhas 
+        WHERE nome_jogador LIKE '%$filtro%' 
+           OR pais LIKE '%$filtro%'
+           OR posicao LIKE '%$filtro%'
+           OR numero = '$filtro'
+        ORDER BY numero";
 		?>
-	</main>
+	</div>
 
-	<?php include "modal.php"; ?>
 
-	<footer class="text-center py-4 mt-5">
-        <p>COPA DO MUNDO 26'</p>
-    </footer>
+
+	<footer class="text-center py-4 mt-5 copa-footer">
+		<p>COPA DO MUNDO 2026 🏆</p>
+	</footer>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/dialogo.js"></script>
 </body>
 
 </html>
